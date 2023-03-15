@@ -63,6 +63,7 @@ personsController.create = (req,res) => {
 
   return res.status(201).json(
     {
+      id,
       name,
       profession,
     },
