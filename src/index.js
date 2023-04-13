@@ -1,6 +1,7 @@
 const express = require('express')
 const personsRouter = require('./routes/persons.routes.js')
 const cors = require('cors')
+const path = require('path')
 
 const app = express()
 
@@ -10,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 app.get('/', (req,res) => {
-  res.send('home page')
+  res.sendFile(path.join(__dirname, '/templates/index.html'))
 })
 
 app.use('/api/persons',personsRouter)

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API Personas</title>
+</head>
+
+<body>
+  <style>
+    body {
+      font-family: Arial;
+      color: #ccc;
+      background-color: #222;
+    }
+
+    h1 {
+      text-align: center;
+      font-weight: 300;
+    }
+
+    h3 {
+      font-weight: 300;
+    }
+
+    .resource-container {
+      overflow-x: auto;
+    }
+  </style>
+
+
+  <h1>API de personas</h1>
+
+  <h3>Recursos disponibles en las siguientes rutas: </h3>
+
+  <div class="resource-container">
+    <pre>
+      <code>
+    // 1. Obtener todos los registros
+    
+    GET /api/persons
+
+    -----------------------------------------------------------
+      </code>
+    </pre>
+
+    <pre>
+      <code>
+    // 2. Nuevo Registro
+
+    POST /api/persons
+    Content-Type: application/json;
+
+    {
+      "name": "nombre de la persona",
+      "profession": "profesión u ocupación de la persona"
+    }
+
+    -----------------------------------------------------------
+      </code>
+    </pre>
+
+    <pre>
+      <code>
+    // 3. Obtener Registro Específico
+ 
+    GET /api/persons/{id_persona}
+    
+    -----------------------------------------------------------
+      </code>
+    </pre>
+
+    <pre>
+      <code>
+    // 4. Actualizar Registro
+    
+    PUT /api/persons/{id_persona}
+    Content-Type: application/json;
+
+    {
+      "name": "nuevo nombre",
+      "profession": "nueva profesión u ocupación"
+    }
+
+    -----------------------------------------------------------
+      </code>
+    </pre>
+  
+    <pre>
+      <code>
+    // 5. Eliminar Registro
+
+    DELETE /api/persons/{id_persona}
+    
+    -----------------------------------------------------------
+      </code>
+    </pre>
+  </div>
+
+</body>
+
+</html>
