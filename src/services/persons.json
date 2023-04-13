@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Gustavo Lopez",
-    "profession": "developer"
+    "profession": "desarrollador"
   },
   {
     "id": "2",
@@ -12,6 +12,6 @@
   {
     "id": "3",
     "name": "Maria Hernandez",
-    "profession": "Teacher"
+    "profession": "maestra"
   }
 ]
